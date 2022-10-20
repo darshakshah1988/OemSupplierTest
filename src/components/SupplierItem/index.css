@@ -1,0 +1,75 @@
+.item {
+  width: 555px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000029;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 16px 20px;
+}
+.item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: #707070;
+}
+.state {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: #707070;
+}
+.vehicle {
+  word-break: break-all;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.score {
+  display: block;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.score-wrap {
+  display: inline-block;
+  position: relative;
+  height: 19px;
+}
+
+.score .stars-active {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font: normal normal normal 20px/27px "Font Awesome";
+  letter-spacing: 0px;
+  color: #ffd600;
+  opacity: 1;
+}
+
+.score .stars-inactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: initial;
+  font: normal normal normal 20px/27px "Font Awesome";
+  letter-spacing: 0px;
+  color: #ffd600;
+  opacity: 0.3;
+  /* overflow: hidden; */
+}
